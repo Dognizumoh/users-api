@@ -3,6 +3,10 @@ const usersRoute = require("./routes/usersRoutes")
 const path = require("path")
 const logger = require ("./middlewares/user.logger")
 const booksRoute = require("./routes/booksRoute")
+require("dotenv").config()
+const connectDB =require("./config/connectDB")
+
+connectDB()
 
 const app = express();
 
